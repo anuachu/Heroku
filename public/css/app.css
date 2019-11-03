@@ -1,0 +1,18 @@
+:root {
+    --primary-color: rgb( 29, 171, 220 );
+}
+
+* { /* '*' is the universal selector - selects all elements */
+    box-sizing: border-box; /* default setting for box-sizing for all element is actually content-box */
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+#main {
+    width: 100%;
+    padding: 0 5%;
+    padding-top: 56px;
+}

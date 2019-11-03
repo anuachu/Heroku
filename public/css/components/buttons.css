@@ -1,0 +1,31 @@
+.btn-large {
+    padding: 10px 16px;
+    border-radius: 16px;
+    font-size: 12px;
+    line-height: 1;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-primary {
+    border-color: rgb( 103, 195, 230 );
+    background-color: white;
+    color: rgb( 103, 195, 230 );
+}
+
+.btn-primary:hover {
+    border-color: rgb( 103, 195, 230 );
+    background-color: rgb( 103, 195, 230 );
+    color: white;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: rgb( 192, 192, 192 );
+}
+
+.btn-secondary:hover {
+    border-color: rgb( 144, 144, 144 );
+    background-color: white;
+    color: rgb( 144, 144, 144 );
+}

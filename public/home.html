@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Home | Twitter</title>
+
+        <link rel="stylesheet" href="external/reset.css">
+        <link rel="stylesheet" href="css/utils.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/components/nav.css">
+        <link rel="stylesheet" href="css/components/buttons.css">
+        <link rel="stylesheet" href="css/components/inputs.css">
+        <link rel="stylesheet" href="css/home.css">
+
+        <style>
+            .menu-container {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row; /* default is row - to arrange in column we can use column */
+            }
+            
+            .menu-container span {
+                display: flex;
+                align-items: center;
+            }
+
+            .menu-container span img {
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="menu-container">
+                <span>
+                    <img src="images/home/home.png" />
+                    <span>Home</span>
+                </span>
+                <span>
+                    <img src="images/landing/logo.png" />
+                </span>
+                <span>
+                    <img src="images/home/user-small.png" />
+                    <button class="btn-large btn-secondary">Logout</button>
+                </span>
+            </div>
+        </nav>
+        
+        <div id="main">
+            <div class="sidebar">
+                <div class="summary">
+                    <div class="summary-image"></div>
+                    <div class="summary-heading">
+                        <img src="images/home/user-large.png" />
+                        <span class="summary-heading-text">
+                            <div>Username</div>
+                            <div>@login userid</div>
+                        </span>
+                    </div>
+                    <div class="summary-stats">
+                        <div class="col">
+                            <div>Tweets</div>
+                            <div>1</div>
+                        </div>
+                        <div class="col">
+                            <div>Following</div>
+                            <div>2</div>
+                        </div>
+                        <div class="col">
+                            <div>Followers</div>
+                            <div>3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="follow-recommendations">
+                    <h3>Who to follow</h3>
+                    <ul>
+                        <li class="follow-item">
+                            <img src="images/home/user-small.png" />
+                            <span>
+                                User Name @Login user-id
+                                <div>
+                                    <button class="btn-large btn-primary">Follow</button>
+                                </div>
+                            </span>
+                        </li>
+                        <li class="follow-item">
+                            <img src="images/home/user-small.png" />
+                            <span>
+                                User Name @Login user-id
+                                <div>
+                                    <button class="btn-large btn-primary">Follow</button>
+                                </div>
+                            </span>
+                        </li>
+                        <li class="follow-item">
+                            <img src="images/home/user-small.png" />
+                            <span>
+                                User Name @Login user-id
+                                <div>
+                                    <button class="btn-large btn-primary">Follow</button>
+                                </div>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-twitter">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ipsam earum accusantium totam sequi, nulla fugiat fuga ratione mollitia perferendis, delectus eius dolore. Repellat libero dolorem inventore voluptatem doloribus placeat.
+                </div>
+            </div>
+            <div class="content">
+                <div class="searchbar">
+                    <img src="images/home/user-small.png" />
+                    <div class="search-input-container">
+                        <input type="text" class="search-input" placeholder="What's happening?" />
+                        <img src="images/home/search.png" class="search-image" />
+                    </div>
+                </div>
+                <div class="tweets">
+                    <div class="tweet">
+                        <img src="images/home/user-small.png" class="tweet-user-image" />
+                        <div class="tweet-details">
+                            <span class="toggle-tweet">
+                                <img src="images/home/caret-down.png" />
+                            </span>
+                            <div class="tweet-header">
+                                <span class="username">User Name</span>
+                                <span class="tweet-time">@Login user-id - 14h</span>
+                            </div>
+                            <div class="tweet-text my-lg">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quis nulla repudiandae mollitia amet illo asperiores consequatur aut nobis omnis blanditiis minus corrupti. Recusandae error enim ex aliquid quidem libero.
+                            </div>
+                            <div class="tweet-stats my-lg">
+                                <span>
+                                    <img src="images/home/reply.png" />
+                                    <span class="num-reply">103</span>
+                                </span>
+                                <span>
+                                    <img src="images/home/like.png" />
+                                    <span class="num-like">472</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweet">
+                        <img src="images/home/user-small.png" class="tweet-user-image" />
+                        <div class="tweet-details">
+                            <span class="toggle-tweet">
+                                <img src="images/home/caret-down.png" />
+                            </span>
+                            <div class="tweet-header">
+                                <span class="username">User Name</span>
+                                <span class="tweet-time">@Login user-id - 14h</span>
+                            </div>
+                            <div class="tweet-text my-lg">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quis nulla repudiandae mollitia amet illo asperiores consequatur aut nobis omnis blanditiis minus corrupti. Recusandae error enim ex aliquid quidem libero
+                            </div>
+                            <img src="images/home/tweet-image.png" class="tweet-media" />
+                            <div class="tweet-stats my-lg">
+                                <span>
+                                    <img src="images/home/reply.png" />
+                                    <span class="num-reply">103</span>
+                                </span>
+                                <span>
+                                    <img src="images/home/like.png" />
+                                    <span class="num-like">472</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweet">
+                        <img src="images/home/user-small.png" class="tweet-user-image" />
+                        <div class="tweet-details">
+                            <span class="toggle-tweet">
+                                <img src="images/home/caret-down.png" />
+                            </span>
+                            <div class="tweet-header">
+                                <span class="username">User Name</span>
+                                <span class="tweet-time">@Login user-id - 14h</span>
+                            </div>
+                            <div class="tweet-text my-lg">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quis nulla repudiandae mollitia amet illo asperiores consequatur aut nobis omnis blanditiis minus corrupti. Recusandae error enim ex aliquid quidem libero.
+                            </div>
+                            <div class="video-wrapper">
+                                <img src="images/home/tweet-video.png" class="tweet-media" />
+                                <div class="video-overlay"></div>
+                            </div>
+                            <div class="tweet-stats my-lg">
+                                <span>
+                                    <img src="images/home/reply.png" />
+                                    <span class="num-reply">103</span>
+                                </span>
+                                <span>
+                                    <img src="images/home/like.png" />
+                                    <span class="num-like">472</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

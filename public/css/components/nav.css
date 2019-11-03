@@ -1,0 +1,15 @@
+nav {
+    /* static, relative, absolute, fixed, sticky */
+    /* if position is anything else apart form the default value of static, we can then use top, left, bottom, right */
+    position: fixed; /* fixes the position of the element on the viewport */
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    padding: 0 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 2px 3px 0px #cccccc;
+    background-color: white; /* default value is transparent */
+    z-index: 100;
+}

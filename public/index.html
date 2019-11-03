@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Twitter</title>
+        
+        <link rel="stylesheet" href="external/reset.css">
+        <link rel="stylesheet" href="css/utils.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/components/nav.css">
+        <link rel="stylesheet" href="css/components/buttons.css">
+        <link rel="stylesheet" href="css/components/inputs.css">
+        <link rel="stylesheet" href="css/components/dialog.css">
+        <link rel="stylesheet" href="css/index.css">
+
+        <style>
+            nav {
+                box-shadow: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- nav is a semantic tag -->
+        <!-- div is NOT a semantic tags -->
+        <nav>
+            <img src="images/landing/logo.png" />
+        </nav>
+        
+        <div id="main">
+            <ul id="features-list">
+                <li>
+                    <img src="images/landing/interests.png" />
+                    <span>Follow your interests</span>
+                </li>
+                <li>
+                    <img src="images/landing/people.png" />
+                    <span>Hear what people are talking about</span>
+                </li>
+                <li>
+                    <img src="images/landing/conversation.png" />
+                    <span>Join the conversation</span>
+                </li>
+            </ul>
+            <div id="cta">
+                <div id="primary-message">
+                    See what's happening in the world right now
+                </div>
+                <div id="secondary-message">
+                    Join Twitter today.
+                </div>
+                <div id="cta-buttons">
+                    <button>Sign Up</button>
+                    <button>Login</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer is a semantic tag -->
+        <footer>
+            <ul>
+                <li clas="close">
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Help Center</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Status</a>
+                </li>
+            </ul>
+        </footer>
+
+        <div class="dialog">
+            <div class="dialog-overlay"></div>
+            <div class="dialog-body">
+                <div class="close">&times;</div>
+                <h3 class="dialog-heading">Sign up for Twitter</h3>
+                <div class="profile-image-container my-lg">
+                    <span class="add-photo-message">Add Photo</span>
+                </div>
+                <form>
+                    <input type="text" name="username" placeholder="Username" class="input input-sm my-md" />
+                    <input type="email" name="email" placeholder="Email address" class="input input-sm my-md" />
+                    <input type="password" name="password" placeholder="Password" class="input input-sm my-md" />
+                    <input type="password" name="password" placeholder="Confirm password" class="input input-sm my-md" />
+                    <button class="btn-large btn-primary full-width">Next</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

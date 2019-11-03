@@ -1,0 +1,72 @@
+.dialog {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.dialog-overlay {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba( 32, 32, 32, 0.4 );
+}
+
+.dialog-body {
+    /* just to get this on top of overlay */
+    position: relative;
+    width: 70%;
+    max-width: 480px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+}
+
+.dialog-body .close {
+    float: right;
+    padding: 5px 7px;
+    border-radius: 50%;
+    color: #aaa;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.dialog-body .close:hover {
+    color: black;
+    background-color: #eee;
+}
+
+.dialog-heading {
+    /* var( variable_to_use, value_to_use_if_variable_not_present ); */
+    color: var( --primary-color, rgb( 29, 171, 220 ) );
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.profile-image-container {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.add-photo-message {
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+    line-height: 1.4;
+}

@@ -1,0 +1,18 @@
+.input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: lightgray;
+}
+
+.input-sm {
+    font-size: 10px;
+    padding: 3px 0.5em;
+    border-radius: 6px;
+}
+
+.input-lg {
+    font-size: 16px;
+    padding: 5px 0.5em; 
+    border-radius: 8px;
+}
