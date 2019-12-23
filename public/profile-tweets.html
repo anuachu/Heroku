@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Profile - Tweets | Twitter</title>
+
+        <link rel="stylesheet" href="external/reset.css">
+        <link rel="stylesheet" href="css/utils.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/components/nav.css">
+        <link rel="stylesheet" href="css/components/buttons.css">
+        <link rel="stylesheet" href="css/components/inputs.css">
+        <link rel="stylesheet" href="css/profile.css">
+        <link rel="stylesheet" href="css/profile-followers.css">
+        <style>
+            .menu-container {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row; /* default is row - to arrange in column we can use column */
+            }
+            
+            .menu-container span {
+                display: flex;
+                align-items: center;
+            }
+
+            .menu-container span img {
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="menu-container">
+                <span>
+                    <img src="images/home/home.png" />
+                    <span>Home</span>
+                </span>
+                <span>
+                    <img src="images/landing/logo.png" />
+                </span>
+                <span>
+                    <img src="images/home/user-small.png" />
+                    <a href="landing.html" class ="btn-large btn-secondary">Logout</a>
+                </span>
+            </div>
+        </nav>
+        <div class="profile-summary">
+            <div id="profile-background-image"></div>
+            <div id="profile-summary-header">
+                <img src="images/profile/main-profile.png" id="profile-summary-image" />
+                <div id="profile-summary-stats">
+                    <div class="col profile-summary-stats-item profile-summary-stats-item-selected">
+                        <div>Tweets</div>
+                        <div class="profile-summary-stats-number">73</div>
+                    </div>
+                    <div class="col profile-summary-stats-item">
+                        <div>Following</div>
+                        <div class="profile-summary-stats-number">119</div>
+                    </div>
+                    <div class="col profile-summary-stats-item">
+                        <div>Followers</div>
+                        <div class="profile-summary-stats-number">104</div>
+                    </div>
+                </div>
+                <button class="btn-large btn-secondary">Edit profile</button>
+            </div>
+        </div>
+        <div id="main">
+            <div class="sidebar">
+                <div class="summary">
+                    <div class="summary-user-details mb-lg">
+                        <div class="summary-username">User Name</div>
+                        <div>@Login user-id</div>
+                    </div>
+                    <ul class="summary-list">
+                        <li>
+                            <img src="images/profile/location.png" />
+                            Bengaluru, India
+                        </li>
+                        <li>
+                            <img src="images/profile/website.png" />
+                            www.webaddress.com
+                        </li>
+                        <li>
+                            <img src="images/profile/joined.png" />
+                            Joined September 2011
+                        </li>
+                        <li>
+                            <img src="images/profile/born.png" />
+                            Born September 13, 1988
+                        </li>
+                    </ul>
+                </div>
+                <div class="media">
+                    <h5 class="media-heading">Photos & Videos</h5>
+                    <div class="media-wrapper">
+                        <div class="row">
+                            <span class="col"></span>
+                            <span class="col"></span>
+                            <span class="col"></span>
+                        </div>
+                        <div class="row">
+                            <span class="col"></span>
+                            <span class="col"></span>
+                            <span class="col"></span>
+                        </div>
+                        <div class="row">
+                            <span class="col"></span>
+                            <span class="col"></span>
+                            <span class="col"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="follow-recommendations">
+                    <h3 class="follow">Who to follow</h3>
+                    <ul>
+                        <li class="follow-item">
+                            <img src="images/home/user-small.png" />
+                            <span>
+                                User Name 
+                                <span class="login">@Login user-id</span>
+                                <div>
+                                    <button class="btn-large btn-primary">Follow</button>
+                                </div>
+                            </span>
+                        </li>
+                        <li class="follow-item">
+                            <img src="images/home/user-small.png" />
+                            <span>
+                                User Name 
+                                <span class="login">@Login user-id</span>
+                                <div>
+                                    <button class="btn-large btn-primary">Follow</button>
+                                </div>
+                            </span>
+                        </li>
+                        <li class="follow-item">
+                            <img src="images/home/user-small.png" />
+                            <span>
+                                User Name 
+                                <span class="login">@Login user-id</span>
+                                <div>
+                                    <button class="btn-large btn-primary">Follow</button>
+                                </div>
+                            </span>
+                        </li>
+                    
+                    <li class="follow-item">Find people you know</li>
+                    </ul>
+                </div>
+                <div class="about-twitter">
+                        @2019 Twitter_About_Help Center 
+                        Terms_Privacy policy_Cookies_Ads
+                        info_Brand_Blog_Status_Apps_Jobs
+                        Marketing_Businesses_Developers
+                </div>
+            </div>
+            <div class="content">
+                <!--
+                <div class="searchbar">
+                    <img src="images/home/user-small.png" />
+                    <div class="search-input-container">
+                        <input type="text" class="search-input" placeholder="What's happening?" />
+                        <img src="images/home/search.png" class="search-image" />
+                    </div>
+                </div>
+            -->
+                <div class="tweets">
+                    <div class="tweets-heading">
+                        <div class="tweets-heading-item">Tweets</div>
+                        <div class="tweets-heading-item">Tweets &amp; Replies</div>
+                        <div class="tweets-heading-item">Media</div>
+                    </div>
+                    <div class="tweet">
+                        <img src="images/home/user-small.png" class="tweet-user-image" />
+                        <div class="tweet-details">
+                            <span class="toggle-tweet">
+                                <img src="images/home/caret-down.png" />
+                            </span>
+                            <div class="tweet-header">
+                                <span class="username">User Name</span>
+                                <span class="tweet-time">@Login user-id - 14h</span>
+                            </div>
+                            <div class="tweet-text my-lg">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quis nulla repudiandae mollitia amet illo asperiores consequatur aut nobis omnis blanditiis minus corrupti. Recusandae error enim ex aliquid quidem libero.
+                            </div>
+                            <div class="tweet-stats my-lg">
+                                <span>
+                                    <img src="images/home/reply.png" />
+                                    <span class="num-reply">103</span>
+                                </span>
+                                <span>
+                                    <img src="images/home/like.png" />
+                                    <span class="num-like">472</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweet">
+                        <img src="images/home/user-small.png" class="tweet-user-image" />
+                        <div class="tweet-details">
+                            <span class="toggle-tweet">
+                                <img src="images/home/caret-down.png" />
+                            </span>
+                            <div class="tweet-header">
+                                <span class="username">User Name</span>
+                                <span class="tweet-time">@Login user-id - 14h</span>
+                            </div>
+                            <div class="tweet-text my-lg">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quis nulla repudiandae mollitia amet illo asperiores consequatur aut nobis omnis blanditiis minus corrupti. Recusandae error enim ex aliquid quidem libero
+                            </div>
+                            <img src="images/home/tweet-image.png" class="tweet-media" />
+                            <div class="tweet-stats my-lg">
+                                <span>
+                                    <img src="images/home/reply.png" />
+                                    <span class="num-reply">103</span>
+                                </span>
+                                <span>
+                                    <img src="images/home/like.png" />
+                                    <span class="num-like">472</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweet">
+                        <img src="images/home/user-small.png" class="tweet-user-image" />
+                        <div class="tweet-details">
+                            <span class="toggle-tweet">
+                                <img src="images/home/caret-down.png" />
+                            </span>
+                            <div class="tweet-header">
+                                <span class="username">User Name</span>
+                                <span class="tweet-time">@Login user-id - 14h</span>
+                            </div>
+                            <div class="tweet-text my-lg">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quis nulla repudiandae mollitia amet illo asperiores consequatur aut nobis omnis blanditiis minus corrupti. Recusandae error enim ex aliquid quidem libero.
+                            </div>
+                            <div class="video-wrapper">
+                                <img src="images/home/tweet-video.png" class="tweet-media" />
+                                <div class="video-overlay"></div>
+                            </div>
+                            <div class="tweet-stats my-lg">
+                                <span>
+                                    <img src="images/home/reply.png" />
+                                    <span class="num-reply">103</span>
+                                </span>
+                                <span>
+                                    <img src="images/home/like.png" />
+                                    <span class="num-like">472</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

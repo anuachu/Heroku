@@ -7,29 +7,59 @@
 #main .sidebar {
     position: absolute;
     left: 5%;
-    width: 280px;
-    padding: 20px 0;
+    width: 350px;
+    padding: 10px 10px;
+
 }
 
 #main .content {
     width: 100%;
-    padding-top: 30px;
-    padding-left: 308px;
+    padding-top: 20px;
+    padding-left: 350px;
+    padding-right: 200px;
+   
+}
+.tweets{
+    box-shadow: 0px 2px 3px 0px #cccccc;
+  
+    
 }
 
 #main .sidebar .summary, #main .sidebar .follow-recommendations, #main .sidebar .about-twitter {
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: white;
+    
+
+}
+.follow-recommendations{
+    box-shadow: 0px 2px 3px 0px #cccccc;
+    border-radius:12px;
+}
+.follow{
+    padding:12px;
+    font-weight:bold;
+}
+.follow-item{
+    padding:12px;
+    font-weight:bold;
 }
 
 #main .sidebar .summary {
     padding: 5px;
+    box-shadow: 0px 2px 3px 0px #cccccc;
+    border-radius:5px;
+}
+
+.login{
+    color:gray;
+   font-weight:normal
 }
 
 #main .sidebar .summary-image {
     height: 140px;
-    background-color: gray;
+    background-color: rgb(190, 190, 190);
+    border-radius:5px; 
 }
 
 #main .sidebar .summary-heading {
@@ -48,6 +78,7 @@
     top: 30px;
 }
 
+
 /* .summary-stats {
     overflow: auto;
 }
@@ -56,10 +87,27 @@
     float: left;
     width: 33.33333333%;
 } */
+.user{
+    font-weight:bold;
+    padding-left:1px;
+    font-size:20px;
+
+}
+
+.log{
+    color:gray;
+}
 
 .summary-stats {
     display: flex;
+    padding: 10px;
     justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    color:gray;
+}
+.col-color {
+    color:#1A505C;
+    font-weight:bold;
 }
 
 /* flex box approach - to be done */
@@ -77,12 +125,12 @@
 
 .follow-item {
     display: flex;
-    border-top: 1px solid black;   
+    border-top: 1px solid lightgray;   
 }
-
+/* 
 .follow-item:last-of-type {
     border-bottom: 1px solid black;
-}
+} */
 
 .follow-item img {
     height: 0%;
@@ -164,4 +212,19 @@
     bottom: 0px;
     left: 0px;
     background-color: rgba( 32, 128, 192, 0.5 );
+}
+
+.about-twitter{
+    height:70px;
+    box-shadow: 0px 2px 3px 0px #cccccc;
+    border-radius:5px;
+    padding:12px;
+}
+
+.about{
+    cursor: pointer;
+    right:120%;
+    left:120%;
+    padding: 50px 40px;
+    
 }

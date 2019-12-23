@@ -1,0 +1,37 @@
+.buttonNext1{
+    box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background-color:rgb( 29, 171, 220 );
+    border-radius:25px;
+    border:1px solid rgb( 29, 171, 220 );
+    cursor:pointer;
+    color:white;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 35px;
+    text-decoration:none;
+    line-height:1;
+    margin-left:12px;
+    margin-top:5px;
+    border-color: rgb( 29, 171, 220 ); 
+    width:125px;
+}
+
+.dialog-body  .close1{
+    float: right;
+    padding: 5px 7px;
+    border-radius: 50%;
+    color: #aaa;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.close1{
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+    position: absolute;
+    bottom: 78%;
+    right: 3%;
+    padding: 8px 8px;
+}
